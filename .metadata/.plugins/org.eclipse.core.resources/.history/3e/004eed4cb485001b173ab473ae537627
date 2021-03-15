@@ -1,0 +1,36 @@
+package stepsDefinitions;
+
+import core.DriverFactory;
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+import java.net.MalformedURLException;
+
+public class Hooks extends DriverFactory {
+
+
+    @Before
+    public void startAppium() throws MalformedURLException {
+        driver = DriverFactory.getDriver();
+
+    }
+
+    @Test
+    public void sampleTest() {
+//        MobileElement el1 = (MobileElement) driver.findElementById("com.android.calculator2:id/digit_2");
+//        el1.click();
+//        MobileElement el2 = (MobileElement) driver.findElementByAccessibilityId("multiply");
+//        el2.click();
+//        MobileElement el3 = (MobileElement) driver.findElementById("com.android.calculator2:id/digit_6");
+//        el3.click();
+//        MobileElement el4 = (MobileElement) driver.findElementByAccessibilityId("equals");
+//        el4.click();
+//        driver.get("https://www.google.com");
+    }
+
+    @After
+    public void tearDown() {
+//        driver.quit();
+        System.out.printf("fim");
+    }
+}

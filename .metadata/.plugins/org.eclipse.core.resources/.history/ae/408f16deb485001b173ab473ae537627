@@ -1,0 +1,29 @@
+package stepsDefinitions;
+
+import core.DriverFactory;
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+import java.net.MalformedURLException;
+
+public class Hooks extends DriverFactory {
+
+
+    @Before
+    public void startAppium() throws MalformedURLException {
+        driver = DriverFactory.getDriver();
+
+    }
+
+    @Test
+    public void sampleTest() {
+
+        driver.get("https://dev-validacao-cadastral-frontend.clarobrasil.mobi/cadastroprepago/");
+    }
+
+    @After
+    public void tearDown() {
+//        driver.quit();
+        System.out.printf("fim");
+    }
+}

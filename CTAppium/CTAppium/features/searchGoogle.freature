@@ -1,0 +1,10 @@
+#language: pt
+
+Funcionalidade: Realizar uma pesquisa no google
+  Eu como automatizador
+  Quero realizar o fluxo de pesquisar no google atraves do google chrome
+  Para que eu tenha esse projeto como base para projetos futuros
+
+
+  @CT001
+  Cenario: Pesquisar everis no google
